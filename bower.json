@@ -1,0 +1,19 @@
+{
+  "name": "form",
+  "version": "0.0.0",
+  "authors": [
+    "nomad <noneprado@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*"
+  }
+}
