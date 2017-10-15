@@ -49,6 +49,11 @@ gulp.task('style:build', function () {
         .pipe(reload({stream: true}));
 });
 
+gulp.task('fonts:build', function() {
+    gulp.src(path.src.fonts)
+        .pipe(gulp.dest(path.build.fonts))
+});
+
 
 const path = {
     build: { //Тут мы укажем куда складывать готовые после сборки файлы

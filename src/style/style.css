@@ -10,6 +10,7 @@
 }
 
 
+
 #footerId {
     background-color: #1f2229;
     color: #8f9399;
@@ -26,6 +27,9 @@
     min-width: 90px;
 }
 
+.payment-duration {
+    width: 50px;
+}
 
 .payment-icons img {
 
