@@ -16,13 +16,13 @@
     font: 16px/1.375 tele2_textsans_regular,sans-serif;
 }
 
-.test {
+.credit-card {
     width: 100%;
     display: block;
     border: 2px solid #7a7a7a;
     padding: 0 40px 0 20px;
     height: 60px;
-    margin: 0 0 20px!important;
+    margin: 0 0 20px;
     min-width: 90px;
 }
 
@@ -39,6 +39,9 @@ input, select, textarea {
     border-radius: 0;
 }
 
+.select #credit-card option[value="visa"] { background-image: url(../img/visa.png) }
+.select #credit-card option[value="mastercard"] { background-image: url(../img/mastercard.png) }
+.select #credit-card option[value="unionpay"] { background-image: url(../img/unionpay.png) }
 
 
 
