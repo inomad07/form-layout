@@ -1,17 +1,14 @@
-.form {
+.form .payment-list .auto-payment-list {
     color: black;
     font-family: 'myFirstFont';
-
 }
 
-.headId {
+.header {
     background-color: #1f2229;
     color: #8f9399;
 }
 
-
-
-#footerId {
+.footer {
     background-color: #1f2229;
     color: #8f9399;
     font: 16px/1.375 tele2_textsans_regular,sans-serif;
@@ -27,8 +24,12 @@
     min-width: 90px;
 }
 
-.payment-duration {
+.card-duration {
     width: 50px;
+}
+
+#cvv {
+    width: 30px;
 }
 
 .payment-icons img {
