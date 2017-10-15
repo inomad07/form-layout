@@ -21,6 +21,14 @@ gulp.task('default', function() {
 
 });
 
+gulp.task('build', [
+    'html:build',
+    'js:build',
+    'style:build',
+    'fonts:build',
+    'image:build'
+]);
+
 gulp.task('html:build', function () {
     gulp.src(path.src.html) //Выберем файлы по нужному пути
         .pipe(rigger()) //Прогоним через rigger
@@ -54,6 +62,17 @@ gulp.task('fonts:build', function() {
         .pipe(gulp.dest(path.build.fonts))
 });
 
+gulp.task('image:build', function () {
+    gulp.src(path.src.img) //Выберем наши картинки
+        .pipe(imagemin({ //Сожмем их
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant()],
+            interlaced: true
+        }))
+        .pipe(gulp.dest(path.build.img)) //И бросим в build
+        .pipe(reload({stream: true}));
+});
 
 const path = {
     build: { //Тут мы укажем куда складывать готовые после сборки файлы
